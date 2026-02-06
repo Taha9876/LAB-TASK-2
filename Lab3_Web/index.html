@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Index — Demo Pages</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body{padding:28px;font-family:Arial, sans-serif;background:#f7fafc}
+    .cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
+    .link-card{background:#fff;padding:18px;border-radius:10px;box-shadow:0 8px 20px rgba(2,6,23,0.06);text-decoration:none;color:#0b1220;display:flex;flex-direction:column;gap:8px;align-items:flex-start;transition:transform .12s,box-shadow .12s}
+    .link-card h3{margin:0;font-size:1.05rem}
+    .link-card p{margin:0;color:#475569;font-size:.95rem}
+    .link-card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(2,6,23,0.08)}
+  </style>
+</head>
+<body>
+  <h1>Demo Pages</h1>
+  <p>Click a card to open the example page:</p>
+
+  <div class="cards-grid">
+    <a class="link-card" href="Q1.html">
+      <h3>Q1 — Profile Card</h3>
+      <p>Profile card demonstrating box model and inline styles.</p>
+    </a>
+
+    <a class="link-card" href="Q2.html">
+      <h3>Q2 — Grid Dashboard</h3>
+      <p>Dashboard layout using CSS Grid (header, sidebar, main, footer).</p>
+    </a>
+
+    <a class="link-card" href="Q3.html">
+      <h3>Q3 — Flexbox Cards</h3>
+      <p>Flexbox navbar and responsive card layout with hover effects.</p>
+    </a>
+
+    <a class="link-card" href="Q4.html">
+      <h3>Q4 — Positioning (Readable)</h3>
+      <p>Sticky navbar, relative container with absolute badges, fixed button.</p>
+    </a>
+
+    <a class="link-card" href="Q5.html">
+      <h3>Q5 — Positioning (Simple)</h3>
+      <p>Simple positioning examples for quick reference.</p>
+    </a>
+
+    <a class="link-card" href="Q6.html">
+      <h3>Q6 — Dashboard Demo</h3>
+      <p>Grid + Flexbox combined: sidebar, courses, NEW badge, fixed help.</p>
+    </a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+/* Q6*/
+body{margin:0;font-family:Arial, sans-serif;background:#f7fafc;color:#0b1220;font-size:18px}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:#2563eb;color:#fff;position:sticky;top:0;z-index:50}
+.brand{font-weight:700}
+main{padding:18px}
+.relative{position:relative;background:#fff;border:1px solid #e6eef8;border-radius:8px;padding:18px;margin:20px auto;max-width:760px;min-height:200px}
+.relative h2{margin:0 0 8px;font-size:1.1rem}
+.relative p{margin:0 0 12px}
+.abs-tr{position:absolute;top:12px;right:12px;background:#ef4444;color:#fff;padding:6px 10px;border-radius:6px;font-weight:600}
+.abs-bl{position:absolute;bottom:12px;left:12px;background:#f59e0b;color:#fff;padding:6px 8px;border-radius:6px}
+.fixed-btn{position:fixed;bottom:18px;right:18px;background:#10b981;color:#fff;padding:10px 14px;border-radius:999px;border:none;cursor:pointer}
+.spacer{height:700px}
+footer{padding:18px;text-align:center;color:#475569}
+@media (max-width:520px){
+  .relative{padding:14px}
+  .navbar{flex-direction:column;gap:8px;text-align:center}
+  body{font-size:16px}
+}
+
+/* Shared components for other pages */
+.btn{display:inline-block;padding:8px 12px;border-radius:8px;border:none;cursor:pointer;font-weight:600}
+.btn-primary{background:#0b74de;color:#fff}
+
+/* Q1 */
+.profile-wrap{min-height:100vh;background:#f3f6f9;display:flex;align-items:center;justify-content:center;padding:36px;box-sizing:border-box}
+.profile-card{width:100%;max-width:360px;padding:20px;background:#fff;color:#222;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.12);text-align:center}
+.profile-card img{width:120px;height:120px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 16px;border:4px solid rgba(0,0,0,0.05)}
+.profile-card h2{margin:0 0 8px;font-size:1.25rem}
+.profile-card p{margin:0 0 6px;color:#555}
+
+/* Q2 */
+.grid-container{display:grid;height:100vh;grid-template-columns:200px 1fr;grid-template-rows:60px 1fr 40px;grid-template-areas:"header header" "sidebar main" "footer footer";gap:10px;padding:10px;box-sizing:border-box}
+.grid-container header{grid-area:header;background:#4a90e2;color:#fff;display:flex;align-items:center;justify-content:center}
+.grid-container aside{grid-area:sidebar;background:#2d3a45;color:#fff;padding:10px}
+.grid-container main{grid-area:main;background:#fff;padding:10px}
+.grid-container footer{grid-area:footer;background:#333;color:#fff;display:flex;align-items:center;justify-content:center}
+
+/* Q3 */
+.nav{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:#0b74de;color:#fff}
+.nav a{color:#fff;text-decoration:none;margin-left:10px;padding:6px 8px;border-radius:6px}
+.nav a:hover{background:rgba(255,255,255,0.12)}
+.wrap{padding:16px}
+.cards{display:flex;gap:12px;flex-wrap:wrap}
+.card{background:#fff;padding:12px;border-radius:8px;box-shadow:0 6px 16px rgba(2,6,23,0.06);width:220px;transition:transform .12s}
+.card:hover{transform:translateY(-6px)}
+
+/* Q4/Q5 */
+.relative-box{position:relative;background:#fff;border:1px solid #e6eef8;border-radius:8px;padding:18px;margin:20px auto;max-width:760px;min-height:200px}
+.absolute-badge,.badge{position:absolute;top:12px;right:12px;background:#ef4444;color:#fff;padding:8px 10px;border-radius:6px;font-weight:600}
+.absolute-note,.note{position:absolute;bottom:12px;left:12px;background:#f59e0b;color:#fff;padding:6px 8px;border-radius:6px}
+.fixed-help,.fixed-btn{position:fixed;bottom:18px;right:18px;background:#10b981;color:#fff;padding:10px 14px;border-radius:999px;border:none;cursor:pointer}
+
+/* Q6: Dashboard using CSS Grid + Flexbox for courses */
+.dashboard-grid{
+  display:grid;
+  min-height:100vh;
+  grid-template-columns:180px 1fr;
+  grid-template-rows:72px 1fr 44px;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  gap:12px;
+}
+.dashboard-grid header{grid-area:header;background:#2f4050;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.15rem}
+.dashboard-grid aside{grid-area:sidebar;background:#eef3f4;padding:12px;border-right:1px solid #dfe7ea}
+.dashboard-grid main{grid-area:main;background:#fff;padding:22px;position:relative}
+.dashboard-grid footer{grid-area:footer;background:#2f4050;color:#fff;display:flex;align-items:center;justify-content:center}
+
+.sidebar-nav{list-style:none;padding:0;margin:8px 0}
+.sidebar-nav li{background:#e6eaec;margin:8px 0;padding:8px;border-radius:4px;color:#2b3940;font-size:.95rem}
+.sidebar-nav li:hover{background:#d9e0e3;cursor:pointer}
+
+.courses{display:flex;gap:14px;align-items:center}
+.course{flex:1 1 180px;background:#e9f4fb;padding:14px;border-radius:8px;text-align:center;color:#15324b;box-shadow:0 4px 10px rgba(3,45,69,0.04);transition:transform .12s,box-shadow .12s}
+.course:hover{transform:translateY(-6px);box-shadow:0 12px 28px rgba(3,45,69,0.08)}
+
+.new-badge{position:absolute;top:18px;right:18px;background:#ef4444;color:#fff;padding:6px 10px;border-radius:999px;font-weight:700;font-size:.85rem}
+
+@media (max-width:780px){
+  .dashboard-grid{grid-template-columns:1fr;grid-template-rows:72px auto 1fr 44px;grid-template-areas:"header" "sidebar" "main" "footer"}
+  .courses{flex-direction:column}
+}
+
+/* Q5: Float based two-column layout */
+.float-wrap{max-width:980px;margin:18px auto;padding:16px}
+.left-col{float:left;width:60%;background:#fff;padding:14px;border-radius:8px;box-shadow:0 6px 16px rgba(2,6,23,0.04)}
+.right-col{float:right;width:36%;background:#f1f5f8;padding:14px;border-radius:8px;box-shadow:0 6px 16px rgba(2,6,23,0.04)}
+.media-item{display:flex;gap:12px;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid #eef3f6}
+.media-item img{width:120px;height:80px;object-fit:cover;border-radius:6px}
+.media-item h4{margin:0 0 6px;font-size:1rem}
+.clearfix::after{content:"";display:block;clear:both}
+
+@media (max-width:760px){
+  .left-col,.right-col{float:none;width:100%}
+}
+
+
+
