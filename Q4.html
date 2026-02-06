@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Positioning Demo — Simple & Readable</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div style="font-weight:700">Position Demo</div>
+    <nav>Sticky bar — stays visible at top</nav>
+  </header>
+
+  <main>
+    <section class="relative-box">
+      <div style="font-size:1.125rem;font-weight:700;margin-bottom:10px">Relative Container</div>
+      <p style="margin:0 0 12px">This container uses <strong>position: relative</strong>. The small red badge is placed with <strong>position: absolute</strong> using <em>top</em> and <em>right</em>. A note sits at the bottom-left.</p>
+      <div class="absolute-badge">Top / Right</div>
+      <div class="absolute-note">Bottom / Left</div>
+    </section>
+
+    <p>Scroll down — the green button stays fixed in the corner.</p>
+    <div class="spacer"></div>
+  </main>
+
+  <button class="fixed-btn">Need help?</button>
+
+  <footer>
+    Simple footer — shows normal page flow below the sticky bar
+  </footer>
+</body>
+</html>
