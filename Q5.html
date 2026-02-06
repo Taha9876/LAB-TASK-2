@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Q5 — Positioning Examples (Simple)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">Q5 Positions</div>
+    <nav>Sticky bar — stays visible at top</nav>
+  </header>
+  <main>
+    <div class="float-wrap clearfix">
+      <div class="left-col">
+        <div class="media-item">
+          <img src="https://via.placeholder.com/240x160" alt="Course 1">
+          <div>
+            <h4>Course One</h4>
+            <p style="margin:0;color:#475569">Overview of course one content and learnings.</p>
+          </div>
+        </div>
+
+        <div class="media-item">
+          <img src="https://via.placeholder.com/240x160" alt="Course 2">
+          <div>
+            <h4>Course Two</h4>
+            <p style="margin:0;color:#475569">Overview of course two content and learnings.</p>
+          </div>
+        </div>
+
+        <div class="media-item">
+          <img src="https://via.placeholder.com/240x160" alt="Course 3">
+          <div>
+            <h4>Course Three</h4>
+            <p style="margin:0;color:#475569">Overview of course three content and learnings.</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="right-col">
+        <h3 style="margin-top:0">About University</h3>
+        <p style="color:#475569">Learn more about the university and its programs.</p>
+        <p style="margin-top:10px"><a href="https://www.university.example" target="_blank">Visit University Website</a></p>
+      </aside>
+    </div>
+
+    <div class="spacer"></div>
+  </main>
+
+  <button class="fixed-help">Help</button>
+
+  <footer>Footer — normal flow below the sticky navbar</footer>
+</body>
+</html>
